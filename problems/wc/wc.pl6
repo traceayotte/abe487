@@ -12,6 +12,7 @@ my $data = slurp $file;
 
  print "lines ($lines) words ($words) chars ({$data.chars})";
 
+}
+}
       }
-}
-}
+

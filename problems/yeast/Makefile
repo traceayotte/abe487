@@ -7,10 +7,28 @@ clean:
 
 fasta:
 	echo "Download files into \"fasta\" directory"
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr01.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr02.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr03.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr04.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr05.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr06.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr07.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr08.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr09.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr10.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr11.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr12.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr13.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr14.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr15.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr15.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chr16.fsa
+wget -P fasta -nc http://downloads.yeastgenome.org/sequence/S288C_reference/chromosomes/fasta/chrmt.fsa
 
 genome: fasta
 	echo OK > fasta/genome.fa
-
+cat fasta/chr*.fsa
 chr-count: genome
 	echo OK > chr-count
 
