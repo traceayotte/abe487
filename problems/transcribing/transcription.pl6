@@ -7,3 +7,7 @@ sub MAIN(Str $input = $DNA) {
 
     print $RNA;
 }
+
+
+
+#could only get the first T to change to U
